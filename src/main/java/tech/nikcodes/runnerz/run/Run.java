@@ -18,11 +18,16 @@ public record Run(
 
 ) {
 
-    public Run {
-        if(!completedOn().isAfter(startedOn)){
-            throw new IllegalArgumentException("Completed On must be after Started On");
-        }
+    // public Run {
 
-    }
+    //     if (startedOn == null) {
+    //         throw new IllegalArgumentException("Started On cannot be null");
+    //     }
+
+    //     if(!completedOn().isAfter(startedOn)){
+    //         throw new IllegalArgumentException("Completed On must be after Started On");
+    //     }
+
+    // }
 
 }
